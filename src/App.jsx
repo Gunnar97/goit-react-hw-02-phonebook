@@ -41,7 +41,6 @@ class App extends React.Component {
         toast.success(`${name} was added to contacts`);
       } else {
         toast.error(`${name} is already exist in contacts`);
-        this.setState({ name: '', number: '' });
       }
     }
   };
