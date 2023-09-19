@@ -35,8 +35,6 @@ class App extends React.Component {
       if (!contactInList) {
         this.setState(prev => ({
           contacts: [...prev.contacts, { id: nanoid(), name, number }],
-          name: '',
-          number: '',
         }));
         toast.success(`${name} was added to contacts`);
       } else {
